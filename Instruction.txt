@@ -1,0 +1,56 @@
+  			END SEM PROJECT
+			    GROUP-15
+		       CAB BOOKING SYSTEM
+		            Cabenato
+Team Member names:
+
+1. Devansh Agrawal b20094
+2. Arman B20083
+3. Nilesh Rewasiya B20117
+4. Hemant Bansal B20288
+5. Harikrit Khatait B20102
+6. Komal B20111
+7. Shivam Kumar B20134
+
+Name of our project is CABENATO .It is online cab booking system.
+To setup our website you need to follow the instructions mentioned below and also know purpose 
+of different programs.
+
+1. When you open "ENDSEM_Project_Group-15" you will encounter 2 files and two folders.
+One file is Instruction.txt which you are currently reading and has the complete set-up process of our site.
+Second file will be a pdf file showing a introduction to our site, methodology used to make our site, data Schema,etc.
+
+2. Open folder sql and you will see a file named "Mandicab.sql" which contains database of our site and you to import it first.
+a) Open Xampp shell.
+b) First create a empty database named mandicab using following query : "CREATE DATABASE Mandicab"
+c) After this save this "mandicab.sql" in Xampp folder.
+d) Then run this command to import the database into the sql server from dump file : "mysql -u username -p password mandicab < mandicab2.sql"
+Your Database is successfully uploaded.
+
+3. Now take the folder named "Main" and save the folder in "htdocs" present in Xampp folder.
+
+4. Again open Xampp control panel and start Apache and Mysql by clicking "Start".
+
+5.Now open your browser and type : "localhost/main/form.php".
+
+6.This command will take you to site's main login-signup page from where you can navigate to any page of our cab booking site.
+
+7. To enter cab booking page you just need to signup and login with same email and password but to enter Admin page you have to use a special email and password which is:
+Email="nrewasiya@gmail.com" and password="9752452576". When you enter this you will be redirected to Admin.php.
+
+8. Any user by default is a Customer, so if you want to become Admin you need to change your "Category" Column value corresponding 
+to your Email id to Admin using "Update" function in Mandicab database in Customer table in sql shell.
+Command - "update customer set Category='Admin' where Email="Your_Email"; ".
+
+9.You also need to change settings in XAMPP so that it also user to send message. Change setting in sendmail.ini file present in Sendmail folder in XAMPP
+At the same time allow less secure application to access gmail in your google account settings.  
+
+Your Set up is Complete. Now you can use our site in your local device. For more information about our site please read our "report".
+Thank you
+
+
+
+
+
+
+
